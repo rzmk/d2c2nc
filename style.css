@@ -1,0 +1,181 @@
+
+/*
+*   Change these styles!
+*/
+
+html{
+    font-family: "Lato", sans-serif;
+    line-height: 140%;
+    font-size: 20px;
+    color: #39393F;
+    background-color: #C9EDFF;
+}
+
+h1{
+    font-weight: 800;
+    font-size: 40px;
+    margin-top: 0px; 
+    margin-bottom: 16px; 
+    color: #16161D;
+}
+
+h2{
+    font-weight: 600;
+    font-size: 32px;
+    margin-top: 0px;
+    margin-bottom: 32px; 
+    color: #16161D;
+}
+
+h3{
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 16px;
+    letter-spacing: 0.06em;
+    color: #324670;
+    display: none;
+}
+
+#intro{
+    font-weight: 400;
+    margin-bottom: 24px;
+}
+
+p{
+    max-width: 480px; 
+}
+
+button{
+    /*button text*/ 
+    font-family: "Lato";
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: 0.01em;
+    color: #F8F9FC;
+
+    /*button shape*/
+    background: #3EB9FF;
+    border-radius: 8px;
+    padding: 12px 16px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.card{
+    /*setting how the element will behave as a flexbox itself*/
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    padding: 0px;
+    background: transparent;
+    border: none; 
+    border-radius: 20px;
+    width: 100%;
+    margin-right: 24px;
+
+    /*setting how the element behaves as a flexbox's child*/
+    align-self: stretch;
+    flex-grow: 1;
+}
+
+.card-text{
+    color: #39393F;
+    min-height: 80px;
+    margin-bottom: 0px; 
+    align-self: stretch;
+    min-width: 0px;
+}
+
+
+/**
+*   Do not change these styles
+*/
+
+.container{
+    max-width: 1200px;
+    margin: 5rem auto;
+}
+
+.container.horizontal{
+    display: flex;
+    flex-direction: horizontal;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#landing-img{
+    margin: auto;
+    max-width: 560px;
+}
+
+#columns{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-img{
+    align-self: stretch;
+    flex-grow: 1;
+    border-radius: 25px;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+}
+
+.card:last-child{
+    margin-right: 0px;
+}
+
+.card-img:hover {
+    opacity: 0.5;
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        margin: 2rem 0;
+    }
+    
+    .container.horizontal {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #landing-img {
+        width: 15rem;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+        padding: 20px;
+    }
+
+    h3 {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+
+    #columns {
+        flex-direction: column;
+    }
+
+    .card {
+        margin: 1rem 0;
+        text-align: center
+    }
+    
+    .card-img {
+        width: 384px;
+        height: 384px;
+        justify-content: center;
+    }
+}
